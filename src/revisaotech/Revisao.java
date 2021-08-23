@@ -5,6 +5,7 @@
  */
 package revisaotech;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
@@ -32,6 +33,12 @@ public class Revisao {
 
         String texto;// qualquer texto
         char caractere; //um caractere da tabela ASCII
+        
+        //ArrayList -> vetor mais sofisticado
+        ArrayList<Integer> lista = new ArrayList<>();
+        lista.add(1);
+        lista.add(2);
+        lista.add(3);
 
         System.out.println("Hello World!");
 
@@ -54,7 +61,7 @@ public class Revisao {
         num5 = leitor.nextFloat();
 
         System.out.print("Digite algo ai:");
-        texto = leitor.next();
+        texto = leitor.nextLine();
 
         System.out.print("Digite um caractere:");
         caractere = leitor.next().charAt(0);
@@ -72,6 +79,24 @@ public class Revisao {
         verifica = num1 > num2;
 
         System.out.println("num1 > num2 ? " + verifica);
+
+        System.out.println("ArrayList");
+        for (int i = 0; i < lista.size(); i++) {
+
+            System.out.println("Posição: " + i + " | Valor: " + lista.get(i));
+
+        }
+
+        System.out.println("ArrayList-Impressão 2");
+        lista.forEach((i) -> System.out.println("Valor: " + i));
+
+        System.out.println("ArrayList-Impressão 3");
+        System.out.println("Valores: " + lista.toString());
+
+        System.out.println("ArrayList-Impressão 4");
+        for (Integer integer : lista) {
+            System.out.println("Valores: " + lista.get(integer));
+        }
 
     }
 
