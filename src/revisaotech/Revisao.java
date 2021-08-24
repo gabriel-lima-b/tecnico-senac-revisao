@@ -33,7 +33,7 @@ public class Revisao {
 
         String texto;// qualquer texto
         char caractere; //um caractere da tabela ASCII
-        
+
         //ArrayList -> vetor mais sofisticado
         ArrayList<Integer> lista = new ArrayList<>();
         lista.add(1);
